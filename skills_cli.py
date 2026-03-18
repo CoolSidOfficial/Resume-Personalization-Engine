@@ -40,7 +40,7 @@ def create_custom_tex(company):
     end_index = content.find(end_tag)
 
     if start_index == -1 or end_index == -1:
-        print("❌ ERROR: Add % SKILLS_START and % SKILLS_END in your .tex file")
+        print("ERROR: Add % SKILLS_START and % SKILLS_END in your .tex file")
         return None
 
     start_index += len(start_tag)
@@ -65,7 +65,7 @@ def create_custom_tex(company):
 # COMPILE PDF
 # ----------------------------
 def compile_pdf(tex_file, company):
-    print("\n⚙️ Compiling PDF...\n")
+    print("\nCompiling PDF...\n")
 
     try:
         for _ in range(2):
@@ -81,10 +81,10 @@ def compile_pdf(tex_file, company):
 
         if os.path.exists(pdf_name):
             shutil.move(pdf_name, final_pdf)
-            print(f"✅ Final PDF: {final_pdf}")
+            print(f"Final PDF: {final_pdf}")
 
     except subprocess.CalledProcessError:
-        print("❌ Compilation failed. Run manually:")
+        print("Compilation failed. Run manually:")
         print(f"pdflatex {tex_file}")
 
 
@@ -150,7 +150,7 @@ def main():
         print("\nOptions:")
         print("1. Remove skill")
         print("2. Add skill")
-        print("3. Build Resume 🚀")
+        print("3. Build Resume")
         print("4. Exit")
 
         choice = input("\nChoose: ")
