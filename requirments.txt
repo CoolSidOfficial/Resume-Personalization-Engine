@@ -1,0 +1,8 @@
+# Core (standard library used - no install needed)
+# os
+# json
+# subprocess
+# shutil
+
+# No external Python dependencies required
+
