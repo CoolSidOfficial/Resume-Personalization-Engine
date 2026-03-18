@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in Latex
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{graphicx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins (slightly tighter but safe)
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.1in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+
+% Tight spacing
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\tabcolsep}{0in}
+
+% Section formatting (compressed)
+\titleformat{\section}
+  {\vspace{-6pt}\scshape\raggedright\large}
+  {}{0em}{}
+  [\color{black}\titlerule \vspace{-8pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-4pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \href{#2}{Visit Live} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\begin{center}
+    {\Huge \textbf{Siddhant Jain}} \\ \vspace{6pt}
+    +91 6232799390 $|$
+    \href{https://coolsid.tech}{coolsid.tech} $|$
+    \href{https://www.linkedin.com/in/siddhant-jain-coolsidofficial/}{linkedin.com/in/siddhant-jain-coolsidofficial} $|$
+    \href{https://github.com/CoolSidOfficial}{github.com/CoolSidOfficial} $|$
+    \href{mailto:siddhantjainmvm@gmail.com}{siddhantjainmvm@gmail.com}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{LNCT Group of Colleges (LNCTE)}{Nov 2022 -- Jul 2026}
+{B.Tech. in Computer Science}{Bhopal, MP}
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+% SKILLS_START
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{Frontend:} React, Next.js, TypeScript, Tailwind CSS, JavaScript
+    \item \textbf{Backend:} FastAPI, Node.js + Express, Flask, Python, REST APIs, JWT Authentication
+    \item \textbf{Databases:} PostgreSQL, MongoDB, Redis
+    \item \textbf{ML \& AI Tools:} Scikit-Learn, Pandas, LangChain, Ollama
+    \item \textbf{DevOps \& Infra:} Docker, Nginx, Azure, WebSockets
+\end{itemize}
+% SKILLS_END
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Full Stack Developer Intern}{Sep 2023 -- Apr 2024}
+{AICTE IDEALAB, Bhopal, MP}{}
+\begin{itemize}[leftmargin=0.15in]
+    \resumeItem{Built a responsive full-stack web application using \textbf{Next.js} and \textbf{Tailwind CSS} with secure backend integration.}
+    \resumeItem{Designed and implemented a secure admin panel with \textbf{JWT} authentication and \textbf{CSRF} protection.}
+    \resumeItem{Developed and integrated a dynamic image gallery that increased student engagement on the platform.}
+\end{itemize}
+
+\resumeSubheading
+{Frontend Developer Intern}{Apr 2023 -- Sep 2023}
+{KLIC Kalchuri Incubation Center, Bhopal, MP}{}
+\begin{itemize}[leftmargin=0.15in]
+    \resumeItem{Delivered 5+ production-ready frontend websites using \textbf{React} and modern UI/UX practices.}
+    \resumeItem{Achieved full mobile responsiveness across all projects, improving user experience on desktop and mobile.}
+    \resumeItem{Collaborated directly with the Apeiro Medica team in the Dare to Start program to ship user-focused interfaces under tight deadlines.}
+\end{itemize}
+
+\resumeSubHeadingListEnd
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{CoolGuide $|$ \emph{FastAPI, Next.js, Zustand, Scikit-learn, Express.js, MongoDB, Socket.IO}}
+{https://github.com/CoolSidOfficial/CoolGuide}
+\begin{itemize}[leftmargin=0.15in]
+    \resumeItem{Architected full-stack electronics recommendation platform handling \textbf{100+} listings with API responses under \textbf{200ms}.}
+    \resumeItem{Built similarity-based recommendation engine using Scikit-learn that generates personalized top-k suggestions in real-time.}
+    \resumeItem{Implemented live chat with sub-\textbf{100ms} latency using Socket.IO and deployed on Azure with Nginx reverse proxy.}
+\end{itemize}
+
+\resumeProjectHeading
+{KNNFitSense $|$ \emph{React, Flask, Scikit-learn, Tailwind CSS, JavaScript}}
+{https://github.com/CoolSidOfficial/KNNFitSense}
+\begin{itemize}[leftmargin=0.15in]
+    \resumeItem{Engineered full-stack fitness prediction platform integrating \textbf{K-Nearest Neighbors} classifier with Flask REST API and React frontend.}
+    \resumeItem{Performed feature preprocessing and normalization on health metrics, delivering real-time predictions under \textbf{100ms}.}
+    \resumeItem{Designed dynamic UI that renders instant results for workout and diet recommendations.}
+\end{itemize}
+
+\resumeProjectHeading
+{Coolforums $|$ \emph{Next.js, Express.js, PostgreSQL, WebSockets, Docker, Redis}}
+{https://github.com/CoolSidOfficial/FORUMS}
+\begin{itemize}[leftmargin=0.15in]
+    \resumeItem{Architected scalable full-stack discussion platform with nested replies, upvote ranking, and real-time notifications.}
+    \resumeItem{Implemented WebSockets + Redis pub/sub for live comment updates and topic-based threading.}
+    \resumeItem{Containerized entire application with Docker for consistent deployment and scalability.}
+\end{itemize}
+
+\resumeProjectHeading
+{CoolCounsel $|$ \emph{React, Express.js, MongoDB}}
+{https://coolcounsel.netlify.app/}
+\begin{itemize}[leftmargin=0.15in]
+    \resumeItem{Built full-stack college admission predictor for Madhya Pradesh by analyzing \textbf{10,000+} historical DTE records.}
+    \resumeItem{Achieved \textbf{90\%+} prediction accuracy, helping \textbf{1,000+} students choose suitable colleges and courses.}
+\end{itemize}
+\resumeSubHeadingListEnd
+\section{Achievements}
+\resumeSubHeadingListStart
+
+\resumeItem{Solved \textbf{200+} DSA questions, building strong problem-solving skills for scalable full-stack systems.}
+\resumeItem{Built \textbf{22+} hands-on full-stack and ML projects with real-world impact and production deployments.}
+\resumeItem{Semi-Finalist, Smart India Hackathon 2023 \& 2024 – Led teams building GeoTrack and Legal Gyaan using React Native, WebSockets, GPS, Node.js, MongoDB, and NLP.}
+
+\resumeSubHeadingListEnd
+\end{document}
